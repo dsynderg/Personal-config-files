@@ -1,0 +1,22 @@
+alias c="clear"
+alias ls="ls -Glahs"
+alias rm="rm -i"
+alias cp="cp -i"
+alias mv="mv -i"
+# Quick ping to see if you're online
+alias google="ping 8.8.8.8"
+# Get your local IP address
+alias myip="ipconfig getifaddr en0"
+# Show all open ports
+alias ports="netstat -tulanp"
+alias python="python3"
+alias pip="pip3"
+alias reload="source ~/.zshrc && echo 'Zsh config reloaded!'"
+PROMPT='%F{82}%n@%m %~ %# %f'
+export PATH="/opt/homebrew/bin:$PATH"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/dtsyndergaard/.lmstudio/bin"
+# End of LM Studio CLI section
+
+alias clip="pbcopy"
