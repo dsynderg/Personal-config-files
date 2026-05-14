@@ -20,3 +20,10 @@ export PATH="$PATH:/Users/dtsyndergaard/.lmstudio/bin"
 # End of LM Studio CLI section
 
 alias clip="pbcopy"
+alias tree='find . -print | awk -F/ '\''{
+
+    for (i=1; i<NF; i++) printf "│   ";
+
+    print "├── " $NF
+
+}'\'''
